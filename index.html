@@ -1,21 +1,86 @@
-<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="ja">
 <head>
-	<title>OpenBlink.org</title>
-	<meta name="description" content="OpenBlink" />
-	<meta name="keywords" content="OpenBlink,OpenBlink.org" />
-	<meta name="robots" content="index,follow" />
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<meta http-equiv="Content-Style-Type" content="text/css" />
-	<link rel="index" href="https://openblink.org/" />
+  <meta charset="UTF-8">
+  <meta name="description" content="OpenBlink">
+  <meta name="keywords" content="OpenBlink,OpenBlink.org">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OpenBlink.org</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+      color: #333;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header {
+      margin-bottom: 50px;
+    }
+    h1 {
+      font-family: 'Merriweather', serif;
+      font-size: 3em;
+      margin: 0.5em 0;
+      color: #222;
+    }
+    h2 {
+      font-size: 2em;
+      margin: 20px 0;
+      color: #444;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 20px 0;
+    }
+    li {
+      margin: 15px 0;
+    }
+    a {
+      text-decoration: none;
+      color: #fff;
+      background: #ff7f50;
+      padding: 10px 20px;
+      border-radius: 25px;
+      transition: background 0.3s;
+    }
+    a:hover {
+      background: #ff6347;
+    }
+    #footer {
+      margin-top: 60px;
+      font-size: 0.8em;
+      color: #666;
+    }
+  </style>
 </head>
-<body style="text-align:center;background-color:#ccffcc;">
-<div style="width:100%; margin:0 auto;">
-	<div id="header"></div>
-	<h1 id="title">OpenBlink.org</h1>
-	<div id="header"></div>
-	<div id="content"><a href="https://github.com/OpenBlink/">GitHub</a></div>
-	<div id="footer"></div>
-</div>
+<body>
+  <div class="container">
+    <header>
+      <h1>OpenBlink</h1>
+    </header>
+    <section id="content">
+      <div id="WebIDE">
+        <h2>WebIDE</h2>
+        <ul>
+          <li><a href="tools/0.3.3/webide/index.html">Ver.0.3.3</a></li>
+        </ul>
+        <h2>SourceCode</h2>
+        <p><a href="https://github.com/OpenBlink/openblink">nRF54L15-DK, nRF52840-DK</a></p>
+        <p><a href="https://github.com/OpenBlink/openblink-demo-m5">M5 StampS3 (Espressif ESP32-S3FN8)</a></p>
+      </div>
+    </section>
+    <footer id="footer">
+      <p>Since 2025.03.06</p>
+    </footer>
+  </div>
 </body>
 </html>
