@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OpenBlink WebIDE</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.18/codemirror.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.18/theme/dracula.min.css"
+    />
+  </head>
+  <body>
+    <h1>OpenBlink WebIDE</h1>
+    <hr />
+    <div>Step1: <button id="ble-connect">Connect to device</button></div>
+    <hr />
+    <div>Step2: Write your Ruby code</div>
+    <textarea id="ruby-code"></textarea>
+    <hr />
+    <div>
+      Step3: <button id="run-main">Build&Blink</button> &nbsp; &nbsp; &nbsp;
+      <button id="soft-reset">Soft RESET</button>
+    </div>
+    <hr />
+    <div id="consoleOutput"></div>
+    <hr />
+    <div>- <a href="https://github.com/OpenBlink">GitHub</a> -</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.18/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.18/mode/ruby/ruby.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.18/addon/edit/matchbrackets.min.js"></script>
+    <script src="codemirror.js"></script>
+    <script src="mrbc/mrbc.js"></script>
+    <script src="crc.js"></script>
+    <script src="blink.js"></script>
+  </body>
+</html>
