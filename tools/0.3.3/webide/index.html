@@ -10,18 +10,59 @@
   </head>
   <body>
     <h1>OpenBlink WebIDE</h1>
+    <div class="description">
+      OpenBlink
+      WebIDEは、Rubyコードを書いて、OpenBlinkデバイスに転送するためのツールです。
+    </div>
     <hr />
-    <div>Step1: <button id="ble-connect">Connect to device</button></div>
+    <div class="step">
+      <div class="step-title">Step1: デバイスに接続する</div>
+      <div class="step-description">
+        「Connect to
+        device」ボタンをクリックして、Bluetoothデバイス選択ダイアログからOpenBlinkデバイスを選択します。
+      </div>
+      <button id="ble-connect">Connect to device</button>
+    </div>
     <hr />
-    <div>Step2: Write your Ruby code</div>
-    <textarea id="ruby-code"></textarea>
+    <div class="step">
+      <div class="step-title">Step2: Rubyコードを書く</div>
+      <div class="step-description">
+        エディタにRubyコードを記述します。サンプルコードを参考に、独自のプログラムを作成できます。
+      </div>
+      <textarea id="ruby-code"></textarea>
+    </div>
     <hr />
-    <div>
-      Step3: <button id="run-main">Build&Blink</button> &nbsp; &nbsp; &nbsp;
+    <div class="step">
+      <div class="step-title">Step3: ビルドして転送する</div>
+      <div class="step-description">
+        「Build&Blink」ボタンをクリックして、コードをコンパイルし、デバイスに転送します。
+        転送が完了すると、プログラムが自動的に実行されます。 「Soft
+        RESET」ボタンでデバイスをリセットできます。
+      </div>
+      <button id="run-main">Build&Blink</button> &nbsp; &nbsp; &nbsp;
       <button id="soft-reset">Soft RESET</button>
     </div>
     <hr />
     <div id="consoleOutput"></div>
+    <hr />
+    <details>
+      <summary>利用可能な関数リファレンス</summary>
+      <div class="reference">
+        <h3>LED制御</h3>
+        <ul>
+          <li><code>LED.set([255, 0, 0])</code> - 内蔵LEDを赤色にする</li>
+          <li><code>LED.set([0, 255, 0])</code> - 内蔵LEDを緑色にする</li>
+          <li><code>LED.set([0, 0, 255])</code> - 内蔵LEDを赤色にする</li>
+        </ul>
+        <h3>タイマー</h3>
+        <ul>
+          <li><code>sleep (seconds)</code> - 指定した秒数だけ待機</li>
+          <li>
+            <code>sleep_ms (milli seconds)</code> - 指定したミリ秒だけ待機
+          </li>
+        </ul>
+      </div>
+    </details>
     <hr />
     <div>- <a href="https://github.com/OpenBlink">GitHub</a> -</div>
     <script src="codemirror/codemirror.js"></script>
