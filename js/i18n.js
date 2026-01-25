@@ -210,6 +210,7 @@ function setLanguage(lang) {
     localStorage.setItem('openblink-lang', lang);
   } catch (e) {
     // localStorage is disabled or unavailable (private mode, security settings, etc.)
+    console.warn('localStorage unavailable, using in-memory language storage:', e.message);
     inMemoryLang = lang;
   }
   
@@ -233,6 +234,7 @@ function initI18n() {
     savedLang = localStorage.getItem('openblink-lang');
   } catch (e) {
     // localStorage is disabled, use in-memory fallback if available
+    console.warn('localStorage unavailable, using in-memory language storage:', e.message);
     if (inMemoryLang !== null) {
       savedLang = inMemoryLang;
     }
