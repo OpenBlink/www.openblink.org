@@ -232,8 +232,10 @@ function initI18n() {
   try {
     savedLang = localStorage.getItem('openblink-lang');
   } catch (e) {
-    // localStorage is disabled, use in-memory fallback if it has a value
-    savedLang = inMemoryLang || null;
+    // localStorage is disabled, use in-memory fallback if available
+    if (inMemoryLang) {
+      savedLang = inMemoryLang;
+    }
   }
   
   const browserLang = navigator.language.split('-')[0];
