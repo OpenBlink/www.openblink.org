@@ -197,13 +197,21 @@ const translations = {
 };
 
 let currentLang = 'en';
+let inMemoryLang = null; // Fallback when localStorage is unavailable
 
 function setLanguage(lang) {
   if (!translations[lang]) return;
   
   currentLang = lang;
   document.documentElement.lang = lang;
-  localStorage.setItem('openblink-lang', lang);
+  
+  // Try to persist language preference, fall back to in-memory storage
+  try {
+    localStorage.setItem('openblink-lang', lang);
+  } catch (e) {
+    // localStorage is disabled or unavailable (private mode, security settings, etc.)
+    inMemoryLang = lang;
+  }
   
   document.querySelectorAll('[data-i18n]').forEach(element => {
     const key = element.getAttribute('data-i18n');
@@ -218,7 +226,16 @@ function setLanguage(lang) {
 }
 
 function initI18n() {
-  const savedLang = localStorage.getItem('openblink-lang');
+  let savedLang = null;
+  
+  // Try to retrieve saved language preference
+  try {
+    savedLang = localStorage.getItem('openblink-lang');
+  } catch (e) {
+    // localStorage is disabled, use in-memory fallback
+    savedLang = inMemoryLang;
+  }
+  
   const browserLang = navigator.language.split('-')[0];
   const defaultLang = savedLang || (translations[browserLang] ? browserLang : 'en');
   
