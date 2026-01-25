@@ -1,0 +1,76 @@
+/*
+ * SPDX-License-Identifier: BSD-3-Clause
+ * SPDX-FileCopyrightText: Copyright (c) 2026 OpenBlink.org
+ */
+
+.editor-container {
+  margin: 10px 0;
+}
+
+.editor-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.editor-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.CodeMirror {
+  height: auto;
+  min-height: 200px;
+  max-height: 400px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  font-size: 13px;
+  font-family: 'Fira Code', 'Monaco', 'Menlo', monospace;
+}
+
+.CodeMirror-scroll {
+  min-height: 200px;
+}
+
+.CodeMirror-focused {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 1px var(--primary-color);
+}
+
+.file-info {
+  font-size: 13px;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.file-info .dirty-indicator {
+  color: var(--warning-color);
+  font-weight: bold;
+}
+
+.filename-input-group {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.filename-input-group input {
+  padding: 4px 8px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  font-size: 12px;
+  width: 120px;
+  background-color: #3c3c3c;
+  color: var(--text-color);
+}
+
+.filename-input-group input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 1px var(--primary-color);
+}
