@@ -39,7 +39,7 @@ function initSmoothScroll() {
         const prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
         
         if (prefersReducedMotion) {
-          window.scrollTo(0, targetPosition);
+          window.scrollTo(window.pageXOffset, targetPosition);
         } else {
           window.scrollTo({
             top: targetPosition,
