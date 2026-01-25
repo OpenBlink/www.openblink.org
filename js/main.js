@@ -34,12 +34,12 @@ function initSmoothScroll() {
       const target = document.querySelector(href);
       if (target) {
         const navHeight = document.querySelector('.navbar').offsetHeight;
-        const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - navHeight;
+        const targetPosition = target.getBoundingClientRect().top + window.scrollY - navHeight;
         
         const prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
         
         if (prefersReducedMotion) {
-          window.scrollTo(window.pageXOffset, targetPosition);
+          window.scrollTo(window.scrollX, targetPosition);
         } else {
           window.scrollTo({
             top: targetPosition,
