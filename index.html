@@ -1,94 +1,228 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="OpenBlink">
-  <meta name="keywords" content="OpenBlink,OpenBlink.org">
+  <meta name="description" content="OpenBlink - A new way to develop embedded systems with Ruby">
+  <meta name="keywords" content="OpenBlink,mruby/c,embedded,IoT,BLE,Ruby,WebIDE">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OpenBlink.org</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Roboto', sans-serif;
-      background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
-      color: #333;
-      line-height: 1.6;
-    }
-    .container {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 40px 20px;
-      text-align: center;
-    }
-    header {
-      margin-bottom: 50px;
-    }
-    h1 {
-      font-family: 'Merriweather', serif;
-      font-size: 3em;
-      margin: 0.5em 0;
-      color: #222;
-    }
-    h2 {
-      font-size: 2em;
-      margin: 20px 0;
-      color: #444;
-    }
-    ul {
-      list-style-type: none;
-      padding: 0;
-      margin: 20px 0;
-    }
-    li {
-      margin: 15px 0;
-    }
-    a {
-      text-decoration: none;
-      color: #fff;
-      background: #ff7f50;
-      padding: 10px 20px;
-      border-radius: 25px;
-      transition: background 0.3s;
-    }
-    a:hover {
-      background: #ff6347;
-    }
-    #footer {
-      margin-top: 60px;
-      font-size: 0.8em;
-      color: #666;
-    }
-  </style>
+  <title>OpenBlink - Embedded Development Reimagined</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>OpenBlink</h1>
-    </header>
-    <section id="content">
-      <div>
-        <h2>DevelopmentTools</h2>
-        <ul>
-          <li><a href="https://marketplace.visualstudio.com/items?itemName=OpenBlink.open-blink-vscode-extension">VSCode Extention (Recommended)</a></li>
-          <li><a href="https://open-vsx.org/extension/openblink/open-blink-vscode-extension">OpenVSX <small>(VSCode Compatible Editors)</small></a></li>
-          <li><a href="tools/canary/webide/index.html">WebIDE Canary (Demo/Experimental)</a></li>
-          <li><a href="tools/0.3.4/webide/index.html">WebIDE Ver.0.3.4 (Demo)</a></li>
-          <li><a href="tools/0.3.3/webide/index.html">WebIDE Ver.0.3.3 (Demo)</a></li>
-        </ul>
-        <h2>SourceCode</h2>
-        <ul>
-          <li><a href="https://github.com/OpenBlink/openblink">nRF54L15-DK, nRF52840-DK</a></li>
-          <li><a href="https://github.com/OpenBlink/openblink-demo-m5">M5 StampS3 (Espressif ESP32-S3FN8)</a></li>
-          <li><a href="https://github.com/OpenBlink/openblink-vscode-extension">VSCode Extention SourceCode</a></li>
-          <li><a href="https://github.com/OpenBlink/openblink-webide">WebIDE SourceCode</a></li>
-        </ul>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">OpenBlink</a>
+      <div class="nav-links">
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#features" data-i18n="nav.features">Features</a>
+        <a href="#tools" data-i18n="nav.tools">Tools</a>
+        <a href="#repositories" data-i18n="nav.repositories">Repositories</a>
+      </div>
+      <div class="lang-selector">
+        <button class="lang-btn" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="zh">中文</button>
+        <button class="lang-btn" data-lang="ja">日本語</button>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">OpenBlink</h1>
+      <p class="hero-subtitle" data-i18n="hero.subtitle">A new way to develop embedded systems</p>
+      <p class="hero-description" data-i18n="hero.description">Update your embedded programs in under 0.1 seconds via Bluetooth, without restarting the device.</p>
+      <div class="hero-buttons">
+        <a href="#tools" class="btn btn-primary" data-i18n="hero.getStarted">Get Started</a>
+        <a href="https://github.com/OpenBlink" class="btn btn-secondary" data-i18n="hero.viewGitHub">View on GitHub</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title" data-i18n="about.title">What is OpenBlink?</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p data-i18n="about.description1">OpenBlink is an open-source project that revolutionizes embedded systems development. Using mruby/c, a lightweight Ruby implementation for microcontrollers, you can write and update programs on embedded devices wirelessly via Bluetooth Low Energy (BLE).</p>
+            <p data-i18n="about.description2">The name "Blink" represents the speed of updates - your code changes are reflected on the device in the blink of an eye, in under 0.1 seconds, without requiring a device restart.</p>
+          </div>
+          <div class="about-highlights">
+            <div class="highlight-card">
+              <div class="highlight-icon">&#9889;</div>
+              <h3 data-i18n="about.highlight1.title">Lightning Fast</h3>
+              <p data-i18n="about.highlight1.desc">Program updates in under 0.1 seconds</p>
+            </div>
+            <div class="highlight-card">
+              <div class="highlight-icon">&#128225;</div>
+              <h3 data-i18n="about.highlight2.title">Wireless</h3>
+              <p data-i18n="about.highlight2.desc">Update via Bluetooth Low Energy</p>
+            </div>
+            <div class="highlight-card">
+              <div class="highlight-icon">&#128260;</div>
+              <h3 data-i18n="about.highlight3.title">No Restart</h3>
+              <p data-i18n="about.highlight3.desc">Device keeps running during updates</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    <footer id="footer">
-      <p>Since 2025.03.06</p>
-    </footer>
-  </div>
+
+    <section id="features" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title" data-i18n="features.title">Key Features</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <h3 data-i18n="features.ruby.title">Ruby for Embedded</h3>
+            <p data-i18n="features.ruby.desc">Use Ruby, a highly productive language, for embedded development through mruby/c - a lightweight Ruby implementation designed for microcontrollers with limited resources (RAM as low as tens of KB).</p>
+          </div>
+          <div class="feature-card">
+            <h3 data-i18n="features.webide.title">Browser-Based IDE</h3>
+            <p data-i18n="features.webide.desc">OpenBlink WebIDE runs entirely in your browser using WebBluetooth and WebAssembly. No installation required - works on Windows, macOS, ChromeOS, and Linux.</p>
+          </div>
+          <div class="feature-card">
+            <h3 data-i18n="features.workflow.title">Build &amp; Blink</h3>
+            <p data-i18n="features.workflow.desc">One-click workflow: compile your Ruby code, transfer it via BLE, and execute on the device - all with a single "Run" button.</p>
+          </div>
+          <div class="feature-card">
+            <h3 data-i18n="features.prototyping.title">Thought-Speed Prototyping</h3>
+            <p data-i18n="features.prototyping.desc">Edit your code and see changes immediately on real hardware. Perfect for rapid iteration and experimentation.</p>
+          </div>
+          <div class="feature-card">
+            <h3 data-i18n="features.diy.title">DIY-able Value</h3>
+            <p data-i18n="features.diy.desc">End users can create and run their own programs on their devices, enabling customization and creative applications.</p>
+          </div>
+          <div class="feature-card">
+            <h3 data-i18n="features.opensource.title">Open Source</h3>
+            <p data-i18n="features.opensource.desc">Fully open source under BSD-3-Clause license. Contribute, customize, and integrate into your own projects.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tools" class="section">
+      <div class="container">
+        <h2 class="section-title" data-i18n="tools.title">Development Tools</h2>
+        
+        <div class="tools-section">
+          <h3 class="tools-subtitle" data-i18n="tools.vscode.title">VSCode Extension</h3>
+          <p class="tools-description" data-i18n="tools.vscode.desc">For the best development experience, use our VSCode extension with full IDE features.</p>
+          <div class="tools-buttons">
+            <a href="https://marketplace.visualstudio.com/items?itemName=OpenBlink.open-blink-vscode-extension" class="btn btn-primary" data-i18n="tools.vscode.marketplace">VS Code Marketplace</a>
+            <a href="https://open-vsx.org/extension/openblink/open-blink-vscode-extension" class="btn btn-secondary" data-i18n="tools.vscode.openvsx">OpenVSX</a>
+          </div>
+        </div>
+
+        <div class="tools-section">
+          <h3 class="tools-subtitle" data-i18n="tools.webide.title">WebIDE</h3>
+          <p class="tools-description" data-i18n="tools.webide.desc">Try OpenBlink directly in your browser. No installation required.</p>
+          
+          <div class="version-selector">
+            <div class="version-tabs">
+              <button class="version-tab active" data-version="canary" data-i18n="tools.webide.canary">Canary (Experimental)</button>
+              <button class="version-tab" data-version="0.3.4" data-i18n="tools.webide.stable">0.3.4 (Stable)</button>
+              <button class="version-tab" data-version="0.3.3" data-i18n="tools.webide.legacy">0.3.3 (Legacy)</button>
+            </div>
+            <div class="version-content">
+              <div class="version-panel active" id="panel-canary">
+                <h4 data-i18n="tools.webide.canary.title">Canary Build</h4>
+                <p data-i18n="tools.webide.canary.desc">Latest experimental features. May be unstable.</p>
+                <a href="tools/canary/webide/index.html" class="btn btn-primary" data-i18n="tools.webide.launch">Launch WebIDE</a>
+              </div>
+              <div class="version-panel" id="panel-0.3.4">
+                <h4 data-i18n="tools.webide.stable.title">Version 0.3.4</h4>
+                <p data-i18n="tools.webide.stable.desc">Current stable release with WebSimulator support.</p>
+                <a href="tools/0.3.4/webide/index.html" class="btn btn-primary" data-i18n="tools.webide.launch">Launch WebIDE</a>
+              </div>
+              <div class="version-panel" id="panel-0.3.3">
+                <h4 data-i18n="tools.webide.legacy.title">Version 0.3.3</h4>
+                <p data-i18n="tools.webide.legacy.desc">Previous stable release for backwards compatibility.</p>
+                <a href="tools/0.3.3/webide/index.html" class="btn btn-primary" data-i18n="tools.webide.launch">Launch WebIDE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="repositories" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title" data-i18n="repos.title">Source Code</h2>
+        <p class="section-description" data-i18n="repos.description">OpenBlink is fully open source. Explore our repositories on GitHub.</p>
+        
+        <div class="repo-grid">
+          <a href="https://github.com/OpenBlink/openblink" class="repo-card">
+            <h3>openblink</h3>
+            <p data-i18n="repos.openblink">Core system for Nordic nRF54L15-DK and nRF52840-DK (C language)</p>
+            <span class="repo-lang">C</span>
+          </a>
+          <a href="https://github.com/OpenBlink/openblink-webide" class="repo-card">
+            <h3>openblink-webide</h3>
+            <p data-i18n="repos.webide">Browser-based development environment (JavaScript, WebAssembly)</p>
+            <span class="repo-lang">JavaScript</span>
+          </a>
+          <a href="https://github.com/OpenBlink/openblink-vscode-extension" class="repo-card">
+            <h3>openblink-vscode-extension</h3>
+            <p data-i18n="repos.vscode">VSCode extension for OpenBlink development</p>
+            <span class="repo-lang">JavaScript</span>
+          </a>
+          <a href="https://github.com/OpenBlink/openblink-demo-m5" class="repo-card">
+            <h3>openblink-demo-m5</h3>
+            <p data-i18n="repos.m5">Demo implementation for M5Stack M5StampS3 (ESP32-S3)</p>
+            <span class="repo-lang">C / mruby/c</span>
+          </a>
+          <a href="https://github.com/OpenBlink/openblink-demo-mdbt50q-db-40" class="repo-card">
+            <h3>openblink-demo-mdbt50q</h3>
+            <p data-i18n="repos.mdbt50q">Demo implementation for Raytac MDBT50Q-DB-40 BLE module</p>
+            <span class="repo-lang">C</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="history" class="section">
+      <div class="container">
+        <h2 class="section-title" data-i18n="history.title">Project History</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">2024.03</div>
+            <div class="timeline-content">
+              <h3 data-i18n="history.2024.03.title">Development Started</h3>
+              <p data-i18n="history.2024.03.desc">Project began as a personal initiative to revolutionize embedded development.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2024.06</div>
+            <div class="timeline-content">
+              <h3 data-i18n="history.2024.06.title">First LED Blink</h3>
+              <p data-i18n="history.2024.06.desc">Successfully achieved LED control using mruby/c on Nordic nRF52832.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2025.03.06</div>
+            <div class="timeline-content">
+              <h3 data-i18n="history.2025.03.title">OpenBlink Released</h3>
+              <p data-i18n="history.2025.03.desc">Released as an open-source project on GitHub.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">OpenBlink</div>
+        <p class="footer-text" data-i18n="footer.since">Since 2025.03.06</p>
+        <div class="footer-links">
+          <a href="https://github.com/OpenBlink" data-i18n="footer.github">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
