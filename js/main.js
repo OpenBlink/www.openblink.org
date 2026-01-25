@@ -36,10 +36,16 @@ function initSmoothScroll() {
         const navHeight = document.querySelector('.navbar').offsetHeight;
         const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - navHeight;
         
-        window.scrollTo({
-          top: targetPosition,
-          behavior: 'smooth'
-        });
+        const prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        
+        if (prefersReducedMotion) {
+          window.scrollTo(0, targetPosition);
+        } else {
+          window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+          });
+        }
       }
     });
   });
