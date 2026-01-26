@@ -64,7 +64,7 @@ const translations = {
     "footer.since": "Since 2025.03.06",
     "footer.github": "GitHub"
   },
-  zh: {
+  "zh-CN": {
     "nav.about": "关于",
     "nav.features": "特性",
     "nav.tools": "工具",
@@ -127,6 +127,71 @@ const translations = {
     "history.2025.03.title": "OpenBlink发布",
     "history.2025.03.desc": "作为开源项目在GitHub上发布。",
     "footer.since": "始于2025.03.06",
+    "footer.github": "GitHub"
+  },
+  "zh-TW": {
+    "nav.about": "關於",
+    "nav.features": "特色",
+    "nav.tools": "工具",
+    "nav.repositories": "程式碼庫",
+    "hero.subtitle": "嵌入式系統開發的新方式",
+    "hero.description": "透過藍牙在0.1秒內更新嵌入式程式，無需重新啟動裝置。",
+    "hero.getStarted": "開始使用",
+    "hero.viewGitHub": "在GitHub上查看",
+    "about.title": "什麼是OpenBlink？",
+    "about.description1": "OpenBlink是一個革新嵌入式系統開發的開源專案。使用mruby/c（一種為微控制器設計的輕量級Ruby實作），您可以透過藍牙低功耗（BLE）無線編寫和更新嵌入式裝置上的程式。",
+    "about.description2": "「Blink」這個名字代表更新的速度——您的程式碼變更會在眨眼間（不到0.1秒）反映到裝置上，無需重新啟動裝置。",
+    "about.highlight1.title": "閃電般快速",
+    "about.highlight1.desc": "程式更新不到0.1秒",
+    "about.highlight2.title": "無線連接",
+    "about.highlight2.desc": "透過藍牙低功耗更新",
+    "about.highlight3.title": "無需重啟",
+    "about.highlight3.desc": "更新期間裝置持續運行",
+    "features.title": "主要特色",
+    "features.ruby.title": "嵌入式Ruby",
+    "features.ruby.desc": "透過mruby/c使用高效的Ruby語言進行嵌入式開發——這是一種專為資源有限的微控制器（RAM低至數十KB）設計的輕量級Ruby實作。",
+    "features.webide.title": "基於瀏覽器的IDE",
+    "features.webide.desc": "OpenBlink WebIDE完全在瀏覽器中運行，使用WebBluetooth和WebAssembly。無需安裝——可在Windows、macOS、ChromeOS和Linux上運行。",
+    "features.workflow.title": "建置與閃爍",
+    "features.workflow.desc": "一鍵工作流程：編譯Ruby程式碼，透過BLE傳輸，並在裝置上執行——只需一個「執行」按鈕。",
+    "features.prototyping.title": "思維速度原型設計",
+    "features.prototyping.desc": "編輯程式碼並立即在真實硬體上看到變化。非常適合快速迭代和實驗。",
+    "features.diy.title": "DIY價值",
+    "features.diy.desc": "終端使用者可以在自己的裝置上建立和執行自己的程式，實現客製化和創意應用。",
+    "features.opensource.title": "開源",
+    "features.opensource.desc": "完全開源，採用BSD-3-Clause授權條款。貢獻、客製化並整合到您自己的專案中。",
+    "tools.title": "開發工具",
+    "tools.vscode.title": "VSCode擴充功能",
+    "tools.vscode.desc": "為獲得最佳開發體驗，請使用我們具有完整IDE功能的VSCode擴充功能。",
+    "tools.vscode.marketplace": "VS Code市集",
+    "tools.vscode.openvsx": "OpenVSX",
+    "tools.webide.title": "WebIDE",
+    "tools.webide.desc": "直接在瀏覽器中試用OpenBlink。無需安裝。",
+    "tools.webide.canary": "Canary（實驗性）",
+    "tools.webide.stable": "0.3.4（穩定版）",
+    "tools.webide.legacy": "0.3.3（舊版）",
+    "tools.webide.canary.title": "Canary版本",
+    "tools.webide.canary.desc": "最新實驗性功能。可能不穩定。",
+    "tools.webide.stable.title": "版本0.3.4",
+    "tools.webide.stable.desc": "目前穩定版本，支援WebSimulator。",
+    "tools.webide.legacy.title": "版本0.3.3",
+    "tools.webide.legacy.desc": "為向後相容保留的舊穩定版本。",
+    "tools.webide.launch": "啟動WebIDE",
+    "repos.title": "原始碼",
+    "repos.description": "OpenBlink完全開源。在GitHub上探索我們的程式碼庫。",
+    "repos.openblink": "Nordic nRF54L15-DK和nRF52840-DK的核心系統（C語言）",
+    "repos.webide": "基於瀏覽器的開發環境（JavaScript、WebAssembly）",
+    "repos.vscode": "OpenBlink開發的VSCode擴充功能",
+    "repos.m5": "M5Stack M5StampS3（ESP32-S3）的示範實作",
+    "repos.mdbt50q": "Raytac MDBT50Q-DB-40 BLE模組的示範實作",
+    "history.title": "專案歷史",
+    "history.2024.03.title": "開發啟動",
+    "history.2024.03.desc": "專案作為個人倡議開始，旨在革新嵌入式開發。",
+    "history.2024.06.title": "首次LED閃爍",
+    "history.2024.06.desc": "成功在Nordic nRF52832上使用mruby/c實現LED控制。",
+    "history.2025.03.title": "OpenBlink發布",
+    "history.2025.03.desc": "作為開源專案在GitHub上發布。",
+    "footer.since": "始於2025.03.06",
     "footer.github": "GitHub"
   },
   ja: {
@@ -193,6 +258,71 @@ const translations = {
     "history.2025.03.desc": "GitHubでオープンソースプロジェクトとして公開。",
     "footer.since": "Since 2025.03.06",
     "footer.github": "GitHub"
+  },
+  "ja-easy": {
+    "nav.about": "<ruby>紹介<rt>しょうかい</rt></ruby>",
+    "nav.features": "<ruby>特徴<rt>とくちょう</rt></ruby>",
+    "nav.tools": "ツール",
+    "nav.repositories": "ソースコード",
+    "hero.subtitle": "<ruby>組<rt>く</rt></ruby>み<ruby>込<rt>こ</rt></ruby>みシステムを<ruby>作<rt>つく</rt></ruby>る<ruby>新<rt>あたら</rt></ruby>しい<ruby>方法<rt>ほうほう</rt></ruby>",
+    "hero.description": "Bluetoothで0.1<ruby>秒<rt>びょう</rt></ruby>いないにプログラムを<ruby>書<rt>か</rt></ruby>きかえます。<ruby>機械<rt>きかい</rt></ruby>を<ruby>止<rt>と</rt></ruby>めなくてもだいじょうぶです。",
+    "hero.getStarted": "はじめる",
+    "hero.viewGitHub": "GitHubを<ruby>見<rt>み</rt></ruby>る",
+    "about.title": "OpenBlinkとは？",
+    "about.description1": "OpenBlinkは、<ruby>小<rt>ちい</rt></ruby>さなコンピュータ（マイコン）のプログラムを<ruby>作<rt>つく</rt></ruby>るためのツールです。mruby/cという<ruby>軽<rt>かる</rt></ruby>いRubyを<ruby>使<rt>つか</rt></ruby>います。Bluetooth（ブルートゥース）で<ruby>無線<rt>むせん</rt></ruby>でプログラムを<ruby>送<rt>おく</rt></ruby>れます。",
+    "about.description2": "「Blink」は「まばたき」という<ruby>意味<rt>いみ</rt></ruby>です。まばたきするくらい<ruby>速<rt>はや</rt></ruby>く（0.1<ruby>秒<rt>びょう</rt></ruby>いない）プログラムが<ruby>変<rt>か</rt></ruby>わります。<ruby>機械<rt>きかい</rt></ruby>を<ruby>止<rt>と</rt></ruby>めなくてもだいじょうぶです。",
+    "about.highlight1.title": "とても<ruby>速<rt>はや</rt></ruby>い",
+    "about.highlight1.desc": "0.1<ruby>秒<rt>びょう</rt></ruby>いないで<ruby>更新<rt>こうしん</rt></ruby>",
+    "about.highlight2.title": "<ruby>無線<rt>むせん</rt></ruby>",
+    "about.highlight2.desc": "Bluetoothで<ruby>送<rt>おく</rt></ruby>れる",
+    "about.highlight3.title": "<ruby>止<rt>と</rt></ruby>めなくてOK",
+    "about.highlight3.desc": "<ruby>更新中<rt>こうしんちゅう</rt></ruby>も<ruby>動<rt>うご</rt></ruby>きつづける",
+    "features.title": "<ruby>特徴<rt>とくちょう</rt></ruby>",
+    "features.ruby.title": "Rubyで<ruby>作<rt>つく</rt></ruby>れる",
+    "features.ruby.desc": "mruby/cを<ruby>使<rt>つか</rt></ruby>うと、<ruby>書<rt>か</rt></ruby>きやすいRubyで<ruby>小<rt>ちい</rt></ruby>さなコンピュータのプログラムが<ruby>作<rt>つく</rt></ruby>れます。メモリが<ruby>少<rt>すく</rt></ruby>ない（<ruby>数十<rt>すうじゅう</rt></ruby>KB）マイコンでも<ruby>動<rt>うご</rt></ruby>きます。",
+    "features.webide.title": "ブラウザで<ruby>使<rt>つか</rt></ruby>える",
+    "features.webide.desc": "OpenBlink WebIDEはブラウザで<ruby>動<rt>うご</rt></ruby>きます。インストールはいりません。Windows、macOS、ChromeOS、Linuxで<ruby>使<rt>つか</rt></ruby>えます。",
+    "features.workflow.title": "ワンクリックで<ruby>実行<rt>じっこう</rt></ruby>",
+    "features.workflow.desc": "「Run」ボタンを<ruby>押<rt>お</rt></ruby>すだけ。Rubyコードをコンパイルして、Bluetoothで<ruby>送<rt>おく</rt></ruby>って、<ruby>動<rt>うご</rt></ruby>かします。",
+    "features.prototyping.title": "すぐに<ruby>試<rt>ため</rt></ruby>せる",
+    "features.prototyping.desc": "コードを<ruby>変<rt>か</rt></ruby>えると、すぐに<ruby>本物<rt>ほんもの</rt></ruby>の<ruby>機械<rt>きかい</rt></ruby>で<ruby>動<rt>うご</rt></ruby>きを<ruby>見<rt>み</rt></ruby>られます。<ruby>何度<rt>なんど</rt></ruby>も<ruby>試<rt>ため</rt></ruby>すのにぴったりです。",
+    "features.diy.title": "<ruby>自分<rt>じぶん</rt></ruby>で<ruby>作<rt>つく</rt></ruby>れる",
+    "features.diy.desc": "<ruby>使<rt>つか</rt></ruby>う<ruby>人<rt>ひと</rt></ruby>が<ruby>自分<rt>じぶん</rt></ruby>でプログラムを<ruby>作<rt>つく</rt></ruby>って<ruby>動<rt>うご</rt></ruby>かせます。<ruby>自分<rt>じぶん</rt></ruby>だけの<ruby>使<rt>つか</rt></ruby>い<ruby>方<rt>かた</rt></ruby>ができます。",
+    "features.opensource.title": "オープンソース",
+    "features.opensource.desc": "BSD-3-Clauseライセンスで<ruby>無料<rt>むりょう</rt></ruby>で<ruby>使<rt>つか</rt></ruby>えます。<ruby>自分<rt>じぶん</rt></ruby>のプロジェクトに<ruby>入<rt>い</rt></ruby>れることもできます。",
+    "tools.title": "<ruby>開発<rt>かいはつ</rt></ruby>ツール",
+    "tools.vscode.title": "VSCode<ruby>拡張<rt>かくちょう</rt></ruby>",
+    "tools.vscode.desc": "VSCodeの<ruby>拡張機能<rt>かくちょうきのう</rt></ruby>を<ruby>使<rt>つか</rt></ruby>うと、もっと<ruby>便利<rt>べんり</rt></ruby>に<ruby>開発<rt>かいはつ</rt></ruby>できます。",
+    "tools.vscode.marketplace": "VS Code Marketplace",
+    "tools.vscode.openvsx": "OpenVSX",
+    "tools.webide.title": "WebIDE",
+    "tools.webide.desc": "ブラウザでOpenBlinkを<ruby>試<rt>ため</rt></ruby>せます。インストールはいりません。",
+    "tools.webide.canary": "Canary（<ruby>実験版<rt>じっけんばん</rt></ruby>）",
+    "tools.webide.stable": "0.3.4（<ruby>安定版<rt>あんていばん</rt></ruby>）",
+    "tools.webide.legacy": "0.3.3（<ruby>古<rt>ふる</rt></ruby>いバージョン）",
+    "tools.webide.canary.title": "Canaryビルド",
+    "tools.webide.canary.desc": "<ruby>新<rt>あたら</rt></ruby>しい<ruby>機能<rt>きのう</rt></ruby>を<ruby>試<rt>ため</rt></ruby>せます。<ruby>不安定<rt>ふあんてい</rt></ruby>なことがあります。",
+    "tools.webide.stable.title": "バージョン0.3.4",
+    "tools.webide.stable.desc": "<ruby>今<rt>いま</rt></ruby>の<ruby>安定版<rt>あんていばん</rt></ruby>です。WebSimulatorが<ruby>使<rt>つか</rt></ruby>えます。",
+    "tools.webide.legacy.title": "バージョン0.3.3",
+    "tools.webide.legacy.desc": "<ruby>前<rt>まえ</rt></ruby>の<ruby>安定版<rt>あんていばん</rt></ruby>です。<ruby>古<rt>ふる</rt></ruby>いプロジェクト<ruby>用<rt>よう</rt></ruby>です。",
+    "tools.webide.launch": "WebIDEを<ruby>開<rt>ひら</rt></ruby>く",
+    "repos.title": "ソースコード",
+    "repos.description": "OpenBlinkはオープンソースです。GitHubでコードを<ruby>見<rt>み</rt></ruby>られます。",
+    "repos.openblink": "Nordic nRF54L15-DK、nRF52840-DK<ruby>用<rt>よう</rt></ruby>のコア（C<ruby>言語<rt>げんご</rt></ruby>）",
+    "repos.webide": "ブラウザで<ruby>動<rt>うご</rt></ruby>く<ruby>開発環境<rt>かいはつかんきょう</rt></ruby>（JavaScript、WebAssembly）",
+    "repos.vscode": "OpenBlink<ruby>用<rt>よう</rt></ruby>のVSCode<ruby>拡張<rt>かくちょう</rt></ruby>",
+    "repos.m5": "M5Stack M5StampS3（ESP32-S3）<ruby>用<rt>よう</rt></ruby>のデモ",
+    "repos.mdbt50q": "Raytac MDBT50Q-DB-40 BLEモジュール<ruby>用<rt>よう</rt></ruby>のデモ",
+    "history.title": "プロジェクトの<ruby>歴史<rt>れきし</rt></ruby>",
+    "history.2024.03.title": "<ruby>開発<rt>かいはつ</rt></ruby>スタート",
+    "history.2024.03.desc": "<ruby>組<rt>く</rt></ruby>み<ruby>込<rt>こ</rt></ruby>み<ruby>開発<rt>かいはつ</rt></ruby>を<ruby>変<rt>か</rt></ruby>えるプロジェクトとして<ruby>始<rt>はじ</rt></ruby>まりました。",
+    "history.2024.06.title": "<ruby>初<rt>はじ</rt></ruby>めてのLED<ruby>点滅<rt>てんめつ</rt></ruby>",
+    "history.2024.06.desc": "Nordic nRF52832でmruby/cを<ruby>使<rt>つか</rt></ruby>ってLEDを<ruby>光<rt>ひか</rt></ruby>らせました。",
+    "history.2025.03.title": "OpenBlink<ruby>公開<rt>こうかい</rt></ruby>",
+    "history.2025.03.desc": "GitHubでオープンソースとして<ruby>公開<rt>こうかい</rt></ruby>しました。",
+    "footer.since": "2025.03.06から",
+    "footer.github": "GitHub"
   }
 };
 
@@ -208,7 +338,11 @@ function setLanguage(lang) {
   document.querySelectorAll('[data-i18n]').forEach(element => {
     const key = element.getAttribute('data-i18n');
     if (translations[lang][key]) {
-      element.textContent = translations[lang][key];
+      if (lang === 'ja-easy' && translations[lang][key].includes('<ruby>')) {
+        element.innerHTML = translations[lang][key];
+      } else {
+        element.textContent = translations[lang][key];
+      }
     }
   });
   
@@ -219,8 +353,21 @@ function setLanguage(lang) {
 
 function initI18n() {
   const savedLang = localStorage.getItem('openblink-lang');
-  const browserLang = navigator.language.split('-')[0];
-  const defaultLang = savedLang || (translations[browserLang] ? browserLang : 'en');
+  
+  let detectedLang = 'en';
+  const browserLang = navigator.language;
+  
+  if (browserLang.startsWith('zh-TW') || browserLang.startsWith('zh-Hant')) {
+    detectedLang = 'zh-TW';
+  } else if (browserLang.startsWith('zh')) {
+    detectedLang = 'zh-CN';
+  } else if (browserLang.startsWith('ja')) {
+    detectedLang = 'ja';
+  } else if (browserLang.startsWith('en')) {
+    detectedLang = 'en';
+  }
+  
+  const defaultLang = savedLang || detectedLang;
   
   setLanguage(defaultLang);
   
