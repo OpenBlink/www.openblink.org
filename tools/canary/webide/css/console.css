@@ -1,6 +1,6 @@
 /*
+ * SPDX-FileCopyrightText: Copyright (c) 2025-2026 OpenBlink All Rights Reserved.
  * SPDX-License-Identifier: BSD-3-Clause
- * SPDX-FileCopyrightText: Copyright (c) 2026 OpenBlink.org
  */
 
 .console-container {
@@ -23,7 +23,7 @@
 #consoleOutput {
   background-color: #1e1e1e;
   color: #00ff00;
-  font-family: 'Fira Code', 'Monaco', 'Menlo', monospace;
+  font-family: "Fira Code", "Monaco", "Menlo", monospace;
   font-size: 13px;
   padding: 12px;
   width: 100%;
